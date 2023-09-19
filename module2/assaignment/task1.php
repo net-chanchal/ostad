@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 // Task 1: Looping with Increment using a Function
 
 // Write a PHP function that uses a for loop to print all even numbers from 1 to 20, but with a
@@ -7,40 +8,80 @@
 // to print. Also do the same using while loop and do-while loop also.
 
 
-// Function using a for loop
+// These methods always print even numbers
+// `variable % 2` equivalent `variable & 1` and return 1 or 0 [It's work quickly]
+
+/**
+ * Function using a for loop
+ *
+ * @param int $start
+ * @param int $end
+ * @param int $step
+ */
 function printEvenNumbersFor(int $start, int $end, int $step): void
 {
+    $start += $start & 1; // The initial value always create even number
+
     for ($i = $start; $i <= $end; $i += $step) {
-        echo $i, ($i < $end) ? ", " : "";
+        if ($i & 1) continue; // Skip when value is odd and continue next
+        echo $i, " ";
     }
 }
 
-// Function using a for while loop
+/**
+ * Function using a for while loop
+ *
+ * @param int $start
+ * @param int $end
+ * @param int $step
+ */
 function printEvenNumbersWhile(int $start, int $end, int $step): void
 {
+    $start += $start & 1; // The initial value always create even number
+
     $i = $start;
     while ($i <= $end) {
-        echo $i, ($i < $end) ? ", " : "";
+        if ($i & 1) {
+            // Skip when value is odd and continue next
+            $i += $step;
+            continue;
+        }
+
+        echo $i, " ";
         $i += $step;
     }
 }
 
-// Function using a do-while loop
+/**
+ * Function using a do-while loop
+ *
+ * @param int $start
+ * @param int $end
+ * @param int $step
+ */
 function printEvenNumbersDoWhile(int $start, int $end, int $step): void
 {
+    $start += $start & 1; // The initial value always create even number
     $i = $start;
+
     do {
-        echo $i, ($i < $end) ? ", " : "";
+        if ($i & 1) {
+            // Skip when value is odd and continue next
+            $i += $step;
+            continue;
+        }
+
+        echo $i, " ";
         $i += $step;
     } while ($i <= $end);
 }
 
 // Call the functions
 echo "For Loop: ";
-printEvenNumbersFor(2, 20, 2);
+printEvenNumbersFor(1, 20, 2);
 
 echo "\nWhile Loop: ";
-printEvenNumbersWhile(2, 20, 2);
+printEvenNumbersWhile(1, 20, 2);
 
 echo "\nDo-While Loop: ";
-printEvenNumbersDoWhile(2, 20, 2);
+printEvenNumbersDoWhile(1, 20, 2);

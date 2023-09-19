@@ -6,7 +6,11 @@ declare(strict_types=1);
 // this 15 as an argument of a function and use a for loop to generate these numbers and print
 // them by calling the function.
 
-
+/**
+ * Fibonacci Series printing
+ *
+ * @param int $n
+ */
 function fibonacci(int $n): void
 {
     $previous = 0;
