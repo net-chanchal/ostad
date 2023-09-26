@@ -16,10 +16,9 @@ function generatePassword(int $length): string
     $lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
     $uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     $numericChars = "0123456789";
-    $specialChars = '!@#$%^&*()_+';
+    $specialChars = "!@#$%^&*()_+";
 
     $allChars = $lowercaseChars . $uppercaseChars . $numericChars . $specialChars;
-
     $totalChars = strlen($allChars);
 
     $password = "";
@@ -27,6 +26,16 @@ function generatePassword(int $length): string
     for ($i = 0; $i < $length; $i++) {
         $randomIndex = mt_rand(0, $totalChars - 1);
         $password .= $allChars[$randomIndex];
+    }
+
+    $condition = preg_match("/[$lowercaseChars]/", $password) &&
+        preg_match("/[$uppercaseChars]/", $password) &&
+        preg_match("/[$numericChars]/", $password) &&
+        preg_match("/[$specialChars]/", $password);
+
+    if ($condition == false) {
+        // Generate a new password and return it
+        return generatePassword($length);
     }
 
     return $password;
