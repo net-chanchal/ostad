@@ -1,8 +1,40 @@
-# Assignment: Module 5
+# CREW Project
+It is Crew Project web application that user authentication and role management using PHP. [Project Requirement](../README.md)
 
-[Project Requirement](../README.md)
+__Project Directory Structure__ 
+```text
+└── crew_project/
+    ├── assets/
+    │   ├── css/
+    │   ├── img/
+    │   ├── js/
+    │   └── ...
+    ├── includes/
+    │   ├── config.php
+    │   ├── functions.php
+    │   └── ...
+    ├── libs/
+    │   ├── database/
+    │   ├── session/
+    │   ├── template/
+    │   └── ...
+    ├── pages/
+    ├── storages/
+    │   ├── cache/
+    │   ├── data/
+    │   └── logs/
+    ├── .htaccess
+    ├── index.php
+    └── README.md
+```
 
-### Output Screenshots
+There are 3 different libraries for this project and this library is written by me.
+1. [CSV Database Library](libs/database/README.md)
+2. [Session Library](libs/session/README.md)
+3. [Template Engine Library](libs/template/README.md)
+
+
+### Application Output Screenshots
 
 __Login__
 
