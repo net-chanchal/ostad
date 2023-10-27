@@ -1,0 +1,8 @@
+id,first_name,last_name,email,username,password,role,created_at
+12001,Chanchal,Biswas,admin@gmail.com,mchanchalbd,827ccb0eea8a706c4c34a16891f84e7b,admin,"2023-10-10 00:47:16"
+12002,Abdur,Rahim,manager@gmail.com,abdulrahim123,827ccb0eea8a706c4c34a16891f84e7b,manager,"2023-10-10 00:47:16"
+12004,Jon,Deo,user@gmail.com,jondeo,827ccb0eea8a706c4c34a16891f84e7b,user,"2023-10-12 00:47:16"
+12003,Shadia,Rahman,shadia@gmail.com,shadia2,827ccb0eea8a706c4c34a16891f84e7b,admin,"2023-10-11 00:47:16"
+12005,Rafia,Raka,rafiaraka@gmail.com,rafia12,827ccb0eea8a706c4c34a16891f84e7b,,"2023-10-13 00:47:16"
+12006,Hasan,Uddin,hasanuddin@gmail.com,hasanX23,e10adc3949ba59abbe56e057f20f883e,user,"2023-10-15 00:47:16"
+12007,Jon,Smith,jon@gmail.com,join12334,e10adc3949ba59abbe56e057f20f883e,manager,"2023-10-27 02:15:20"
