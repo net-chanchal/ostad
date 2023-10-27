@@ -29,9 +29,9 @@ __Project Directory Structure__
 ```
 
 There are 3 different libraries for this project and this library is written by me.
-1. [CSV Database Library](libs/database/README.md)
-2. [Session Library](libs/session/README.md)
-3. [Template Engine Library](libs/template/README.md)
+1. [CSV Database Library](libs/database)
+2. [Session Library](libs/session)
+3. [Template Engine Library](libs/template)
 
 
 ### Application Output Screenshots
