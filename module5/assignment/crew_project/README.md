@@ -33,6 +33,23 @@ There are 3 different libraries for this project and this library is written by 
 2. [Session Library](libs/session)
 3. [Template Engine Library](libs/template)
 
+### Requirements
+```text
+PHP version ^8.0.0
+```
+
+### Project Setup
+```gitexclude
+git clone --depth 1 --filter=blob:none --sparse https://github.com/net-chanchal/ostad.git
+cd ostad
+git sparse-checkout init --cone
+git sparse-checkout set module5/assignment/crew_project
+cd module5/assignment/crew_project
+
+php -S localhost:8080
+```
+
+Open browser and this URL: [localhost:8080](localhost:8080)
 
 ### Application Output Screenshots
 

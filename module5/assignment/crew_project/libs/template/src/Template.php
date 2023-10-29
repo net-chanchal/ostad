@@ -58,7 +58,7 @@ class Template
      */
     public static function yield($name): mixed
     {
-        return self::$sections[$name];
+        return self::$sections[$name] ?? "";
     }
 
     /**
