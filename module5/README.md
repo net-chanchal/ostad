@@ -37,6 +37,6 @@ File Read, Write, Delete, Append | Processing data in files using serialized arr
 and Working with Session Data | Simple User Authentication with Sessions, with Basic Discussion of Hashes | User 
 Authentication in Our Crew
 
-- [Live Test](live_test/README.md)
+- [Live Test](live_test)
 - [Assignment](assignment/README.md)
 
