@@ -33,9 +33,9 @@ GROUP BY t1.`name`
 ORDER BY `total_revenue` DESC;
 
 -- Task 4: CREATE VIEW VIEW_TOP_FIVE_PURCHASE_CUSTOMERS
-DROP VIEW IF EXISTS `viw_top_five_purchase_customers`;
+DROP VIEW IF EXISTS `view_top_five_purchase_customers`;
 
-CREATE VIEW `viw_top_five_purchase_customers` AS
+CREATE VIEW `view_top_five_purchase_customers` AS
 SELECT t1.`name`                            AS `customer_name`,
        SUM(t3.`quantity` * t3.`unit_price`) AS `total_purchase_amount`
 FROM `customers` t1

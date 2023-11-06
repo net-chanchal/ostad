@@ -112,7 +112,7 @@ _OR_
 ```sql
 -- Query from view
 SELECT *
-FROM `viw_top_five_purchase_customers`;
+FROM `view_top_five_purchase_customers`;
 ```
 
 ![Task 4](../screenshots/task4.png)
