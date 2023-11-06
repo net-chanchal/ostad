@@ -15,7 +15,7 @@ DROP VIEW IF EXISTS `view_order_items`;
 CREATE VIEW `view_order_items` AS
 SELECT t2.`name`                         AS `product_name`,
        t1.`quantity`,
-       (t1.`quantity` * t1.`unit_price`) AS total_amount
+       (t1.`quantity` * t1.`unit_price`) AS `total_amount`
 FROM order_items t1
          INNER JOIN `products` t2 ON t1.`product_id` = t2.`product_id`
 ORDER BY t1.`order_id`;
