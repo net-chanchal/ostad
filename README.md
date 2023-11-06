@@ -5,7 +5,7 @@
 - **Module 3:** [Mastering PHP Array & String](module3/README.md)
 - **Module 4:** [Mastering PHP OOP](module4/README.md)
 - **Module 5:** [Mastering on PHP File, Session, Date, Exception](module5/README.md)
-- **Module 6:**
+- **Module 6:** [SQL And Database Management system](module6/README.md)
 - **Module 7:**
 - **Module 8:**
 - **Module 9:**
