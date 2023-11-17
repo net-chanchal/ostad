@@ -6,7 +6,7 @@
 - **Module 4:** [Mastering PHP OOP](module4/README.md)
 - **Module 5:** [Mastering on PHP File, Session, Date, Exception](module5/README.md)
 - **Module 6:** [SQL And Database Management system](module6/README.md)
-- **Module 7:**
+- **Module 7:** [Mastering Laravel Architecture & Web Application Terminology](module7/README.md)
 - **Module 8:**
 - **Module 9:**
 - **Module 10:**

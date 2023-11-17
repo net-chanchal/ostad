@@ -42,5 +42,5 @@ __Note:__
 Summary of Module
 
 - [Live Test](live_test)
-- [Assignment](../ostad_module7_assignment)
+- [Assignment](https://github.com/net-chanchal/ostad_module7_assignment)
 
